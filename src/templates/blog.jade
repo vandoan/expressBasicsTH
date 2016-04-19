@@ -1,0 +1,7 @@
+extends ./layout.jade
+
+block content
+	each post in posts
+		a(href='/blog/' + post.title) 
+			h1 	#{ post.title }
+		p 	#{ post.description }
